@@ -1,29 +1,29 @@
 <template>
   <div class="keypad">
-    <button @click="pressed('c')">C</button>
-    <button @click="pressed('()')">()</button>
-    <button @click="pressed('%')">%</button>
-    <button @click="pressed('/')">/</button>
+    <button @click="$emit('clear')">AC</button>
+    <button @click="$emit('deleteNum')">C</button>
+    <button @click="$emit('setOperation', '%')">%</button>
+    <button @click="$emit('setOperation', '/')">/</button>
 
-    <button @click="pressed('7')">7</button>
-    <button @click="pressed('8')">8</button>
-    <button @click="pressed('9')">9</button>
-    <button @click="pressed('*')">x</button>
+    <button @click="$emit('setCurrentNum', 7)">7</button>
+    <button @click="$emit('setCurrentNum', 8)">8</button>
+    <button @click="$emit('setCurrentNum', 9)">9</button>
+    <button @click="$emit('setOperation', '*')">x</button>
 
-    <button @click="pressed('4')">4</button>
-    <button @click="pressed('5')">5</button>
-    <button @click="pressed('6')">6</button>
-    <button @click="pressed('-')">-</button>
+    <button @click="$emit('setCurrentNum', 4)">4</button>
+    <button @click="$emit('setCurrentNum', 5)">5</button>
+    <button @click="$emit('setCurrentNum', 6)">6</button>
+    <button @click="$emit('setOperation', '-')">-</button>
 
-    <button @click="pressed('1')">1</button>
-    <button @click="pressed('2')">2</button>
-    <button @click="pressed('3')">3</button>
-    <button @click="pressed('+')">+</button>
+    <button @click="$emit('setCurrentNum', 1)">1</button>
+    <button @click="$emit('setCurrentNum', 2)">2</button>
+    <button @click="$emit('setCurrentNum', 3)">3</button>
+    <button @click="$emit('setOperation', '+')">+</button>
 
-    <button @click="negateValue">+/-</button>
-    <button @click="pressed('0')">0</button>
-    <button @click="pressed('.')">.</button>
-    <button @click="pressed('=')">=</button>
+    <button>+/-</button>
+    <button @click="$emit('setCurrentNum', 0)">0</button>
+    <button @click="$emit('setCurrentNum', '.')">.</button>
+    <button @click="$emit('calculate')">=</button>
   </div>
 </template>
 

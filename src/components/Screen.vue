@@ -1,23 +1,29 @@
 <template>
   <div class="screen">
-    <!-- <small v-if="selectedOperation"
-      >{{ prevNum }} {{ selectedOperation }} {{ currentNum }}</small
-    > -->
-    <small>11 - 5</small>
-    <div>
-      <h1>6</h1>
-    </div>
+    <small v-show="operation">
+      {{ prevNum }} {{ operation }} {{ currentNum }}
+    </small>
+    <h1>{{ currentNum || 0 }}</h1>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    currentNum: String,
+    prevNum: String,
+    operation: String,
+  },
+};
 </script>
 
 <style>
 .screen {
   text-align: right;
   margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: whitesmoke;
 }
 .screen small {
   font-weight: bold;
