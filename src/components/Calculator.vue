@@ -1,10 +1,17 @@
 <template>
-  <div class="wrapper"></div>
+  <div class="wrapper">
+    <Screen />
+    <Keypad />
+  </div>
 </template>
 
 <script>
+import Keypad from "./Keypad.vue";
+import Screen from "./Screen.vue";
+
 export default {
   name: "Calculator",
+  components: { Screen, Keypad },
 };
 </script>
 
