@@ -33,7 +33,6 @@ export default {};
 
 <style>
 .keypad {
-  padding: 1.4rem 1rem;
   border-radius: 2rem;
   font-size: 1.4rem;
   height: 23rem;
