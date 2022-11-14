@@ -1,24 +1,5 @@
-# calculator
+### Hi there
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+I was starting to study new front-end framework for me and it's Vue.JS.
+This small app i made for understanding of common principals.
+I'm sure what i did something wrong.
