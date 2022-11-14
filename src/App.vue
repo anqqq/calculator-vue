@@ -1,10 +1,16 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <Calculator />
+  </div>
 </template>
 
 <script>
+import Calculator from "./components/Calculator.vue";
 export default {
   name: "App",
+  components: {
+    Calculator,
+  },
 };
 </script>
 
@@ -19,5 +25,9 @@ export default {
   min-width: 100vw;
   min-height: 100vh;
   background-color: whitesmoke;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
